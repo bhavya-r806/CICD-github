@@ -28,7 +28,7 @@ resource "azurerm_kubernetes_cluster" "aks-git" {
   tags = {
     Environment = "Production"
   }
-   depends_on = [azurerm_resource_group.git-rg]
+  depends_on = [azurerm_resource_group.git-rg]
 }
 
 
